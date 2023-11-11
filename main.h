@@ -18,6 +18,14 @@
 #define CONVERT_LOWERCASE 1
 #define CONVERT_UNSIGNED 2
 
+typedef struct parameters
+{}
+
+/* task 0 functions */
+
+int print_char(va_list ap, params_t *params);
+int print_string(va_list ap, params_t params);
+int print_percent(va_list ap, params_t params);
 
 int _printf(const char *format, ...);
 int _putchar(char c);
